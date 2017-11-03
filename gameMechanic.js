@@ -1,5 +1,8 @@
 var yourName;
+var killedMonst;
 yourName = prompt("What is your name, hero?");
+killedMonst = 0;
+
 								
 								
 
@@ -30,10 +33,13 @@ function battle()
 				document.getElementById("storyLine").innerHTML = yourName + "... " + "you are dead!"
 				document.getElementById("run").disabled = true;
 				document.getElementById("atack").disabled = true;
+				document.getElementById("keepGoing").disabled = true;
 			}
 		else
 			{
-			document.getElementById("storyLine").innerHTML = yourName + "! " + "you have won!"
+			document.getElementById("storyLine").innerHTML = yourName + "! " + "You have won!"
+			killedMonst = killedMonst + 1;
+			console.log("\n" + killedMonst + " monsters are dead now");
 			document.getElementById("run").disabled = true;
 			document.getElementById("atack").disabled = true;
 			document.getElementById("keepGoing").disabled = false;
