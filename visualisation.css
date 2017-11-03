@@ -1,0 +1,41 @@
+body {
+	background-color: #F5F5F5;
+}
+
+input {
+	cursor: pointer;
+}
+
+input[disabled] {
+	cursor: not-allowed;
+}
+
+.toCenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+#storyLine	{
+	
+	
+	width: 500px;
+	font-family: calibri;
+	font-size: 19px;
+	text-align: center;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 6px;
+	padding: 2px;
+	margin: 5px;
+	
+}
+
+#controls {
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 15px;
+}
