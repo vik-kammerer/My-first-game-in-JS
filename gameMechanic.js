@@ -28,21 +28,34 @@ function battle()
 		yourLuck = Math.random();
 									
 									
-		if (yourLuck < 0.5)
+		if (yourLuck < 0.1)
 			{
 				document.getElementById("storyLine").innerHTML = yourName + "... " + "you are dead!"
 				document.getElementById("run").disabled = true;
 				document.getElementById("atack").disabled = true;
 				document.getElementById("keepGoing").disabled = true;
+				console.log("You luck is " + yourLuck);
 			}
+			
+		else if (yourLuck > 0.1 && killedMonst == 2)
+			{
+				document.getElementById("storyLine").innerHTML = yourName + "! " + "You are the winner!"
+				document.getElementById("run").disabled = true;
+				document.getElementById("atack").disabled = true;
+				document.getElementById("keepGoing").disabled = true;
+				console.log("You luck is " + yourLuck);
+				
+			}
+		
 		else
 			{
-			document.getElementById("storyLine").innerHTML = yourName + "! " + "You have won!"
-			killedMonst = killedMonst + 1;
-			console.log("\n" + killedMonst + " monsters are dead now");
-			document.getElementById("run").disabled = true;
-			document.getElementById("atack").disabled = true;
-			document.getElementById("keepGoing").disabled = false;
+				document.getElementById("storyLine").innerHTML = yourName + "! " + "You have won!"
+				killedMonst = killedMonst + 1;
+				console.log("\n" + killedMonst + " monsters are dead now");
+				document.getElementById("run").disabled = true;
+				document.getElementById("atack").disabled = true;
+				document.getElementById("keepGoing").disabled = false;
+				console.log("You luck is " + yourLuck);
 			}
 	}
 								
