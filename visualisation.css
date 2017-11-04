@@ -6,7 +6,9 @@ body {
 }
 
 
-
+#tryAgain {
+	display: none;
+}
 
 table {
 

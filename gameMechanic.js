@@ -4,16 +4,21 @@ var runBtn;
 var atackBtn;
 var keepGoingBtn;
 var killedCounter;
+var tryAgain;
 
 storyLine		=	document.getElementById("storyLine");
 runBtn			=	document.getElementById("run");
 atackBtn		=	document.getElementById("atack");
 keepGoingBtn	=	document.getElementById("keepGoing");	
 killedCounter	=	document.getElementById("killedCounter");
+tryAgain		=	document.getElementById("tryAgain");
 killedMonst		=	0;
 
 
-								
+function displayTryAgainBtn()
+	{
+		tryAgain.style.display = "block";
+	}							
 								
 function updateKilledCounter()
 	{
@@ -28,6 +33,7 @@ function checkIfNotAWinner()
 			runBtn.disabled = true;
 			atackBtn.disabled = true;
 			keepGoingBtn.disabled = true;
+			displayTryAgainBtn()
 		}
 	}
 
@@ -60,8 +66,9 @@ function battle()
 				runBtn.disabled = true;
 				atackBtn.disabled = true;
 				keepGoingBtn.disabled = true;
-
+				displayTryAgainBtn()
 				console.log("You luck is " + yourLuck);
+
 
 
 			}
