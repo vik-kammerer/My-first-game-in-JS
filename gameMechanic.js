@@ -8,7 +8,7 @@ var keepGoingBtn;
 storyLine		=	document.getElementById("storyLine");
 runBtn			=	document.getElementById("run");
 atackBtn		=	document.getElementById("atack");
-keepGoingBtn	=	document.getElementById("keepGoing").disabled;	
+keepGoingBtn	=	document.getElementById("keepGoing");	
 
 
 yourName = prompt("What is your name, hero?");
@@ -20,26 +20,26 @@ function checkIfNotAWinner()
 	{
 		if (killedMonst >= 5)
 		{
-			document.getElementById("storyLine").innerHTML = yourName + "! " + "You are the winner!"
-			document.getElementById("run").disabled = true;
-			document.getElementById("atack").disabled = true;
-			document.getElementById("keepGoing").disabled = true;
+			storyLine.innerHTML = yourName + "! " + "You are the winner!"
+			runBtn.disabled = true;
+			atackBtn.disabled = true;
+			keepGoingBtn.disabled = true;
 		}
 	}
 
 								
 function keepGoing()
 	{
-		document.getElementById("atack").disabled = false;
-		document.getElementById("run").disabled = false;
-		document.getElementById("keepGoing").disabled = true;
+		atackBtn.disabled = false;
+		runBtn.disabled = false;
+		keepGoingBtn.disabled = true;
 		refresh();
 		
 	}
 								
 function refresh()
 	{
-		document.getElementById("storyLine").innerHTML = "You have met your foe. What will you do?"
+		storyLine.innerHTML = "You have met your foe. What will you do?"
 	}
 								
 								
@@ -52,10 +52,11 @@ function battle()
 									
 		if (yourLuck < 0.35)
 			{
-				document.getElementById("storyLine").innerHTML = yourName + "... " + "you are dead!"
-				document.getElementById("run").disabled = true;
-				document.getElementById("atack").disabled = true;
-				document.getElementById("keepGoing").disabled = true;
+				storyLine.innerHTML = yourName + "... " + "you are dead!"
+				runBtn.disabled = true;
+				atackBtn.disabled = true;
+				keepGoingBtn.disabled = true;
+
 				console.log("You luck is " + yourLuck);
 			}
 			
@@ -63,12 +64,13 @@ function battle()
 		
 		else
 			{
-				document.getElementById("storyLine").innerHTML = yourName + "! " + "You have won!"
+				storyLine.innerHTML = yourName + "! " + "You have won!"
 				killedMonst = killedMonst + 1;
+				runBtn.disabled = true;
+				atackBtn.disabled = true;
+				keepGoingBtn.disabled = false;
+
 				console.log("\n" + killedMonst + " monsters are dead now");
-				document.getElementById("run").disabled = true;
-				document.getElementById("atack").disabled = true;
-				document.getElementById("keepGoing").disabled = false;
 				console.log("You luck is " + yourLuck);
 			}
 				checkIfNotAWinner();
@@ -83,18 +85,20 @@ function run()
 		if (yourLuck < 0.5)
 			{
 											
-			document.getElementById("storyLine").innerHTML = yourName + ", " + "you have been chased and now you have to fight!"
-			document.getElementById("run").disabled = true;
+			storyLine.innerHTML = yourName + ", " + "you have been chased and now you have to fight!"
+			runBtn.disabled = true;
 											
 			}
 		
 		else if (yourLuck > 0.7)
 			{
-			document.getElementById("storyLine").innerHTML = yourName + "... " + "You ran so fast that smashed 3 other monsters!"
-			document.getElementById("run").disabled = true;
-			document.getElementById("atack").disabled = true;
-			document.getElementById("keepGoing").disabled = false;
+
+			storyLine.innerHTML = yourName + "... " + "You ran so fast that smashed 3 other monsters!"
+			runBtn.disabled = true;
+			atackBtn.disabled = true;
+			keepGoingBtn.disabled = false;
 			killedMonst = killedMonst + 3;
+
 			console.log("\n" + killedMonst + " monsters are dead now");
 			console.log("You luck is " + yourLuck);
 							
@@ -102,10 +106,10 @@ function run()
 		
 		else
 			{
-			document.getElementById("storyLine").innerHTML = yourName + ", " + "you have run away!"
-			document.getElementById("keepGoing").disabled = false;
-			document.getElementById("atack").disabled = true;
-			document.getElementById("run").disabled = true;
+			storyLine.innerHTML = yourName + ", " + "you have run away!"
+			keepGoingBtn.disabled = false;
+			atackBtn.disabled = true;
+			runBtn.disabled = true;
 			}
 								
 			checkIfNotAWinner();
