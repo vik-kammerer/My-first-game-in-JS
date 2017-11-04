@@ -15,8 +15,8 @@ killedMonst		=	0;
 function checkIfNotAWinner()
 	{
 		if (killedMonst >= 5)
-		{
-			storyLine.innerHTML = "You are the winner!"
+		{	
+			storyLine.append("\n You are the winner!");
 			runBtn.disabled = true;
 			atackBtn.disabled = true;
 			keepGoingBtn.disabled = true;
