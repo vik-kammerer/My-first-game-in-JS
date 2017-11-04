@@ -94,7 +94,7 @@ function run()
 											
 			storyLine.innerHTML = "You have been chased and now you have to fight!"
 			runBtn.disabled = true;
-											
+			keepGoingBtn.disabled = true;	
 			}
 		
 		else if (yourLuck > 0.7)
