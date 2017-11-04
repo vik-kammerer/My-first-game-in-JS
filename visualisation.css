@@ -1,5 +1,17 @@
 body {
 	background-color: #F5F5F5;
+	font-family: calibri;
+	font-size: 19px;
+	
+}
+
+
+
+
+table {
+
+
+
 }
 
 input {
@@ -23,8 +35,6 @@ input[disabled] {
 	
 	
 	width: 600px;
-	font-family: calibri;
-	font-size: 19px;
 	text-align: center;
 	border-style: solid;
 	border-width: 1px;
