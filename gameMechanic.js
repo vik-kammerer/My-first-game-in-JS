@@ -1,4 +1,3 @@
-var yourName;
 var killedMonst;
 var storyLine;
 var runBtn;
@@ -9,10 +8,7 @@ storyLine		=	document.getElementById("storyLine");
 runBtn			=	document.getElementById("run");
 atackBtn		=	document.getElementById("atack");
 keepGoingBtn	=	document.getElementById("keepGoing");	
-
-
-yourName = prompt("What is your name, hero?");
-killedMonst = 0;
+killedMonst		=	0;
 
 								
 								
@@ -20,7 +16,7 @@ function checkIfNotAWinner()
 	{
 		if (killedMonst >= 5)
 		{
-			storyLine.innerHTML = yourName + "! " + "You are the winner!"
+			storyLine.innerHTML = "You are the winner!"
 			runBtn.disabled = true;
 			atackBtn.disabled = true;
 			keepGoingBtn.disabled = true;
@@ -52,7 +48,7 @@ function battle()
 									
 		if (yourLuck < 0.35)
 			{
-				storyLine.innerHTML = yourName + "... " + "you are dead!"
+				storyLine.innerHTML = "You are dead!"
 				runBtn.disabled = true;
 				atackBtn.disabled = true;
 				keepGoingBtn.disabled = true;
@@ -64,7 +60,7 @@ function battle()
 		
 		else
 			{
-				storyLine.innerHTML = yourName + "! " + "You have won!"
+				storyLine.innerHTML = "The monster has been killed!"
 				killedMonst = killedMonst + 1;
 				runBtn.disabled = true;
 				atackBtn.disabled = true;
@@ -85,7 +81,7 @@ function run()
 		if (yourLuck < 0.5)
 			{
 											
-			storyLine.innerHTML = yourName + ", " + "you have been chased and now you have to fight!"
+			storyLine.innerHTML = "You have been chased and now you have to fight!"
 			runBtn.disabled = true;
 											
 			}
@@ -93,7 +89,7 @@ function run()
 		else if (yourLuck > 0.7)
 			{
 
-			storyLine.innerHTML = yourName + "... " + "You ran so fast that smashed 3 other monsters!"
+			storyLine.innerHTML = "You ran so fast that smashed 3 other monsters!"
 			runBtn.disabled = true;
 			atackBtn.disabled = true;
 			keepGoingBtn.disabled = false;
@@ -106,7 +102,7 @@ function run()
 		
 		else
 			{
-			storyLine.innerHTML = yourName + ", " + "you have run away!"
+			storyLine.innerHTML = "You have run away!"
 			keepGoingBtn.disabled = false;
 			atackBtn.disabled = true;
 			runBtn.disabled = true;
