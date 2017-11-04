@@ -1,5 +1,16 @@
 var yourName;
 var killedMonst;
+var storyLine;
+var runBtn;
+var atackBtn;
+var keepGoingBtn;
+
+storyLine		=	document.getElementById("storyLine");
+runBtn			=	document.getElementById("run");
+atackBtn		=	document.getElementById("atack");
+keepGoingBtn	=	document.getElementById("keepGoing").disabled;	
+
+
 yourName = prompt("What is your name, hero?");
 killedMonst = 0;
 
