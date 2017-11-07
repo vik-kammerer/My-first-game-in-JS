@@ -18,7 +18,7 @@ function updateKilledCounter() {
 
 function checkIfNotAWinner() {
 		if (killedMonst >= 5) {	
-			storyLine.append(" You are the winner!");
+			storyLine.append(winningMessage);
 			runBtn.disabled = true;
 			atackBtn.disabled = true;
 			keepGoingBtn.disabled = true;
@@ -35,7 +35,7 @@ function keepGoing() {
 	}
 								
 function refresh() {
-		storyLine.innerHTML = "You have met your foe. What will you do?";
+		storyLine.innerHTML = enemyIsHereMessage;
 	}
 								
 								
@@ -47,7 +47,7 @@ function battle() {
   		);
 												
 		if (yourLuck < 50) {
-				storyLine.innerHTML = "You are dead!"
+				storyLine.innerHTML = deathMessage;
 				runBtn.disabled = true;
 				atackBtn.disabled = true;
 				keepGoingBtn.disabled = true;
@@ -58,7 +58,7 @@ function battle() {
 
 		
 		else {
-				storyLine.innerHTML = "The monster has been killed!"
+				storyLine.innerHTML = killedEnemyMessage;
 				killedMonst = killedMonst + 1;
 				runBtn.disabled = true;
 				atackBtn.disabled = true;
@@ -78,13 +78,13 @@ function run() {
   		);
 									
 		if (yourLuck < 50) {
-			storyLine.innerHTML = "You have been chased and now you have to fight!";
+			storyLine.innerHTML = noEscapeMessage;
 			runBtn.disabled = true;
 			keepGoingBtn.disabled = true;	
 			}
 		
 		else if (yourLuck > 0.7) {
-			storyLine.innerHTML = "You ran so fast that smashed 3 other monsters!";
+			storyLine.innerHTML = smashingRunnerMessage;
 			runBtn.disabled = true;
 			atackBtn.disabled = true;
 			keepGoingBtn.disabled = false;
