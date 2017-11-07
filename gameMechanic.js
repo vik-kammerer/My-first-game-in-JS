@@ -83,7 +83,7 @@ function run() {
 			keepGoingBtn.disabled = true;	
 			}
 		
-		else if (yourLuck > 0.7) {
+		else if (yourLuck > 70) {
 			storyLine.innerHTML = smashingRunnerMessage;
 			runBtn.disabled = true;
 			atackBtn.disabled = true;
@@ -95,7 +95,7 @@ function run() {
 			}
 		
 		else {
-			storyLine.innerHTML = "You have run away!";
+			storyLine.innerHTML = hasRunAwayMessage;
 			keepGoingBtn.disabled = false;
 			atackBtn.disabled = true;
 			runBtn.disabled = true;
