@@ -80,7 +80,8 @@ function run() {
 		if (yourLuck < 50) {
 			storyLine.innerHTML = noEscapeMessage;
 			runBtn.disabled = true;
-			keepGoingBtn.disabled = true;	
+			keepGoingBtn.disabled = true;
+			console.log("You luck is " + yourLuck);	
 			}
 		
 		else if (yourLuck > 70) {
@@ -99,6 +100,7 @@ function run() {
 			keepGoingBtn.disabled = false;
 			atackBtn.disabled = true;
 			runBtn.disabled = true;
+			console.log("You luck is " + yourLuck);
 			}
 								
 			checkIfNotAWinner();
