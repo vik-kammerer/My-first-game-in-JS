@@ -1,18 +1,11 @@
-var killedMonst;
-var storyLine;
-var runBtn;
-var atackBtn;
-var keepGoingBtn;
-var killedCounter;
-var tryAgain;
+const storyLine				=		document.getElementById("storyLine");
+const runBtn					=		document.getElementById("run");
+const atackBtn				=		document.getElementById("atack");
+const keepGoingBtn		=		document.getElementById("keepGoing");	
+const killedCounter 	=		document.getElementById("killedCounter");
+const tryAgain 				=		document.getElementById("tryAgain");
 
-storyLine		=	document.getElementById("storyLine");
-runBtn			=	document.getElementById("run");
-atackBtn		=	document.getElementById("atack");
-keepGoingBtn	=	document.getElementById("keepGoing");	
-killedCounter	=	document.getElementById("killedCounter");
-tryAgain		=	document.getElementById("tryAgain");
-killedMonst		=	0;
+let killedMonst				=		0;
 
 
 function displayTryAgainBtn() {
@@ -48,7 +41,7 @@ function refresh() {
 								
 								
 function battle() {
-		var yourLuck;
+		let yourLuck;
 		yourLuck = Math.floor(
   		Math.random() * 100
   		);
@@ -79,7 +72,7 @@ function battle() {
 								
 								
 function run() {
-		var yourLuck;
+		let yourLuck;
 		yourLuck = Math.floor(
   		Math.random() * 100
   		);
