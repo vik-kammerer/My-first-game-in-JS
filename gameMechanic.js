@@ -16,11 +16,11 @@ killedMonst		=	0;
 
 
 function displayTryAgainBtn() {
-		tryAgain.style.display = "block";
+	tryAgain.style.display = "block";
 	}							
 								
 function updateKilledCounter() {
-		killedCounter.innerHTML = killedMonst;
+	killedCounter.innerHTML = killedMonst;
 	}
 
 function checkIfNotAWinner() {
@@ -39,7 +39,6 @@ function keepGoing() {
 		runBtn.disabled = false;
 		keepGoingBtn.disabled = true;
 		refresh();
-		
 	}
 								
 function refresh() {
@@ -50,10 +49,11 @@ function refresh() {
 								
 function battle() {
 		var yourLuck;
-		yourLuck = Math.random();
-									
-									
-		if (yourLuck < 0.35) {
+		yourLuck = Math.floor(
+  		Math.random() * 100
+  		);
+												
+		if (yourLuck < 50) {
 				storyLine.innerHTML = "You are dead!"
 				runBtn.disabled = true;
 				atackBtn.disabled = true;
@@ -80,9 +80,11 @@ function battle() {
 								
 function run() {
 		var yourLuck;
-		yourLuck = Math.random();
+		yourLuck = Math.floor(
+  		Math.random() * 100
+  		);
 									
-		if (yourLuck < 0.5) {
+		if (yourLuck < 50) {
 			storyLine.innerHTML = "You have been chased and now you have to fight!";
 			runBtn.disabled = true;
 			keepGoingBtn.disabled = true;	
