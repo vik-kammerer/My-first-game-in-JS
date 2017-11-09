@@ -1,3 +1,4 @@
+const painMessage             =   "You have been hit!";
 const winningMessage          =   " You are the winner!";
 const enemyIsHereMessage      =   "You have met your foe. What will you do?";
 const deathMessage            =   "You are dead!";

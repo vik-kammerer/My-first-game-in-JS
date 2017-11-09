@@ -5,12 +5,15 @@ function attack() {
       );
                         
     if (yourLuck < 50) {
-        storyLine.innerHTML = deathMessage;
-        runBtn.disabled = true;
-        atackBtn.disabled = true;
+        yourHealth = yourHealth - 10;
+        storyLine.innerHTML = painMessage;
+        runBtn.disabled = false;
+        atackBtn.disabled = false;
         keepGoingBtn.disabled = true;
-        displayTryAgainBtn();
         console.log("You luck is " + yourLuck);
+        console.log("You health is " + yourHealth);
+        updateHealthMonitor()
+        checkIfNotDead();
       }
       
 
