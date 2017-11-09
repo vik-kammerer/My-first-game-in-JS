@@ -5,7 +5,7 @@ function attack() {
       );
                         
     if (yourLuck < 50) {
-        yourHealth = yourHealth - 10;
+        yourHealth = yourHealth - 15;
         storyLine.innerHTML = painMessage;
         runBtn.disabled = false;
         atackBtn.disabled = false;

@@ -1,6 +1,6 @@
 body {
 	background-color: #F5F5F5;
-	font-family: calibri;
+	font-family: book antiqua;
 	font-size: 19px;
 	
 }
@@ -12,18 +12,19 @@ body {
 
 table {
 
-
+font-size: 15px;
 
 }
 
 input {
 	cursor: pointer;
-
+	font-family: book antiqua;
 	
 }
 
 input[disabled] {
 	cursor: not-allowed;
+	font-family: book antiqua;
 }
 
 .toCenter {

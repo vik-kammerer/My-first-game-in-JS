@@ -20,7 +20,7 @@ function updateHealthMonitor() {
 }
 
 function checkIfNotAWinner() {
-		if (killedMonst >= 10) {	
+		if (killedMonst >= 15) {	
 			storyLine.append(winningMessage);
 			runBtn.disabled = true;
 			atackBtn.disabled = true;
