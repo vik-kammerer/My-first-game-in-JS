@@ -11,9 +11,15 @@ function updateKilledCounter() {
 	}
 
 function updateHealthMonitor() {
-	if (yourHealth > 0) {
+	if (yourHealth >= 20 ) {
 	yourHealthMonitor.innerHTML = yourHealth;
 	}
+
+	else if (yourHealth < 20 && yourHealth > 0) {
+	yourHealthMonitor.innerHTML = yourHealth;
+	yourHealthMonitor.style.color = "red";
+	}
+
 	else{
 	yourHealthMonitor.innerHTML = 0;
 	}

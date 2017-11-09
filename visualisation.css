@@ -10,6 +10,11 @@ body {
 	display: none;
 }
 
+
+#yourHealthMonitor {
+	color: black;
+}
+
 table {
 
 font-size: 15px;
