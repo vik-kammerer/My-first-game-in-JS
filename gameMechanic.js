@@ -1,10 +1,3 @@
-const storyLine				=		document.getElementById("storyLine");
-const runBtn					=		document.getElementById("run");
-const atackBtn				=		document.getElementById("atack");
-const keepGoingBtn		=		document.getElementById("keepGoing");	
-const killedCounter 	=		document.getElementById("killedCounter");
-const tryAgain 				=		document.getElementById("tryAgain");
-
 let killedMonst				=		0;
 
 
@@ -40,7 +33,7 @@ function refresh() {
 								
 								
 								
-function battle() {
+function attack() {
 		let yourLuck;
 		yourLuck = Math.floor(
   		Math.random() * 100

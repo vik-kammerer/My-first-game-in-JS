@@ -1,0 +1,6 @@
+const storyLine       =   document.getElementById("storyLine");
+const runBtn          =   document.getElementById("run");
+const atackBtn        =   document.getElementById("atack");
+const keepGoingBtn    =   document.getElementById("keepGoing"); 
+const killedCounter   =   document.getElementById("killedCounter");
+const tryAgain        =   document.getElementById("tryAgain");
