@@ -3,14 +3,22 @@ let yourHealth				=		100;
 let yourLuck;
 
 
-function tryYourLuck() {
-	let x = Math.floor(
+function getRandom() {
+	let rand = Math.floor(
      Math.random() * 100
-  );
-  return x;
+   );
+	return rand;
 }
 
-tryYourLuck();
+function tryYourLuck() {
+	let x = getRandom();
+  let z = getRandom();
+  let y = getRandom();
+  let w = x + z + y;
+  return Math.floor(w/3);
+}
+
+
 
 function displayTryAgainBtn() {
 	tryAgain.style.display = "block";
