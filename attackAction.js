@@ -1,6 +1,5 @@
 function attack() {
-    let yourLuck;
-    yourLuck = Math.floor(
+      yourLuck = Math.floor(
       Math.random() * 100
       );
                         
@@ -10,9 +9,9 @@ function attack() {
         runBtn.disabled = false;
         atackBtn.disabled = false;
         keepGoingBtn.disabled = true;
-        console.log("You luck is " + yourLuck);
-        console.log("You health is " + yourHealth);
-        updateHealthMonitor()
+        logLuck();
+        logHealth();
+        updateHealthMonitor();
         checkIfNotDead();
       }
       
@@ -24,8 +23,8 @@ function attack() {
         runBtn.disabled = true;
         atackBtn.disabled = true;
         keepGoingBtn.disabled = false;
-        console.log("\n" + killedMonst + " monsters are dead now");
-        console.log("You luck is " + yourLuck);
+        logKilledMonsters();
+        logLuck();
       }
         checkIfNotAWinner();
         updateKilledCounter();

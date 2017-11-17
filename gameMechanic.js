@@ -1,5 +1,6 @@
 let killedMonst				=		0;
 let yourHealth				=		100;
+let yourLuck;
 
 
 function displayTryAgainBtn() {

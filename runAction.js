@@ -1,6 +1,5 @@
 function run() {
-    let yourLuck;
-    yourLuck = Math.floor(
+      yourLuck = Math.floor(
       Math.random() * 100
       );
                   
@@ -8,7 +7,7 @@ function run() {
       storyLine.innerHTML = noEscapeMessage;
       runBtn.disabled = true;
       keepGoingBtn.disabled = true;
-      console.log("You luck is " + yourLuck); 
+      logLuck();
       }
     
     else if (yourLuck > 70) {
@@ -17,8 +16,10 @@ function run() {
       atackBtn.disabled = true;
       keepGoingBtn.disabled = false;
       killedMonst = killedMonst + 3;
-      console.log("\n" + killedMonst + " monsters are dead now");
-      console.log("You luck is " + yourLuck);
+        console.log(
+            `${killedMonst} monster(s) defeated`
+            );
+      logLuck();
               
       }
     
@@ -27,7 +28,7 @@ function run() {
       keepGoingBtn.disabled = false;
       atackBtn.disabled = true;
       runBtn.disabled = true;
-      console.log("You luck is " + yourLuck);
+      logLuck();
       }
                 
       checkIfNotAWinner();
