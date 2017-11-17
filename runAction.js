@@ -20,4 +20,5 @@ function run() {
                 
       checkIfNotAWinner();
       updateKilledCounter();
+      updateLuckMonitor()
   }

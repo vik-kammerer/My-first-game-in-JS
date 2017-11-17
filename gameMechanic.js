@@ -78,6 +78,10 @@ function updateHealthMonitor() {
 	}
 }
 
+function updateLuckMonitor() {
+	yourLuckMonitor.innerHTML = yourLuck;
+}
+
 function checkIfNotAWinner() {
 		if (killedMonst >= 15) {	
 			storyLine.append(winningMessage);
@@ -90,8 +94,8 @@ function checkIfNotAWinner() {
 
 								
 function refresh() {
-		storyLine.innerHTML = enemyIsHereMessage;
-	}
+	storyLine.innerHTML = enemyIsHereMessage;
+}
 
 function checkIfNotDead() {
 	if (yourHealth <= 0) {
