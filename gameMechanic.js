@@ -18,7 +18,42 @@ function tryYourLuck() {
   return Math.floor(w/3);
 }
 
+function haveBeenHurt() {
+	yourHealth = yourHealth - 15;
+	storyLine.innerHTML = painMessage;
+	runBtn.disabled = false;
+	atackBtn.disabled = false;
+	keepGoingBtn.disabled = true;
+}
 
+function haveKilled() {
+	storyLine.innerHTML = killedEnemyMessage;
+  killedMonst = killedMonst + 1;
+  runBtn.disabled = true;
+  atackBtn.disabled = true;
+  keepGoingBtn.disabled = false;
+}
+
+function haveBeenChased() {
+	storyLine.innerHTML = noEscapeMessage;
+  runBtn.disabled = true;
+  keepGoingBtn.disabled = true;
+}
+
+function haveSmashed() {
+	storyLine.innerHTML = smashingRunnerMessage;
+  runBtn.disabled = true;
+  atackBtn.disabled = true;
+  keepGoingBtn.disabled = false;
+  killedMonst = killedMonst + 3;
+}
+
+function haveRunAway() {
+	storyLine.innerHTML = hasRunAwayMessage;
+  keepGoingBtn.disabled = false;
+  atackBtn.disabled = true;
+  runBtn.disabled = true;
+}
 
 function displayTryAgainBtn() {
 	tryAgain.style.display = "block";
