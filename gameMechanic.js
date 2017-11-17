@@ -3,6 +3,15 @@ let yourHealth				=		100;
 let yourLuck;
 
 
+function tryYourLuck() {
+	let x = Math.floor(
+     Math.random() * 100
+  );
+  return x;
+}
+
+tryYourLuck();
+
 function displayTryAgainBtn() {
 	tryAgain.style.display = "block";
 	}							

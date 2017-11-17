@@ -1,7 +1,5 @@
 function run() {
-      yourLuck = Math.floor(
-      Math.random() * 100
-      );
+      yourLuck = tryYourLuck();
                   
     if (yourLuck < 50) {
       storyLine.innerHTML = noEscapeMessage;

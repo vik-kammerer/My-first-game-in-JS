@@ -1,7 +1,5 @@
 function attack() {
-      yourLuck = Math.floor(
-      Math.random() * 100
-      );
+      yourLuck = tryYourLuck();
                         
     if (yourLuck < 50) {
         yourHealth = yourHealth - 15;
