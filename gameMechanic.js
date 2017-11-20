@@ -63,13 +63,13 @@ function displayTryAgainBtn() {
 	tryAgain.style.display = "block";
 	}							
 								
-function updateKilledCounter() {
+function updateMonstersLeftMonitor() {
   if (monstersLeft > 0)  {
-	  killedCounter.innerHTML = monstersLeft;
+	  monstersLeftMonitor.innerHTML = monstersLeft;
     }
     else
     {
-      killedCounter.innerHTML = "0";
+      monstersLeft.innerHTML = "0";
     }
 	}
 

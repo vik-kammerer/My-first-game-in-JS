@@ -16,6 +16,6 @@ function attack() {
         logLuck();
       }
         checkIfNotAWinner();
-        updateKilledCounter();
+        updateMonstersLeftMonitor();
         updateLuckMonitor()
   }

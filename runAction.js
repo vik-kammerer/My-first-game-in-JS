@@ -19,6 +19,6 @@ function run() {
       }
                 
       checkIfNotAWinner();
-      updateKilledCounter();
+      updateMonstersLeftMonitor();
       updateLuckMonitor()
   }
