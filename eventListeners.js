@@ -1,15 +1,23 @@
 $('#attack').click(
-  () => {attack()}
+    () => {
+        attack()
+    }
 );
 
 $('#run').click(
-  () => {run()}
+    () => {
+        run()
+    }
 );
 
 $('#keepGoing').click(
-  () => {keepGoing()}
+    () => {
+        keepGoing()
+    }
 );
 
 $('#tryAgain').click(
-  () => {location.reload()}
+    () => {
+        location.reload()
+    }
 );
