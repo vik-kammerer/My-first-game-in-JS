@@ -18,16 +18,20 @@ function tryYourLuck() {
   return Math.floor(w/3);
 }
 
+function say(message) {
+  storyLine.innerHTML = message;
+}
+
 function haveBeenHurt() {
-	yourHealth = yourHealth - 15;
-	storyLine.innerHTML = painMessage;
+	say(painMessage);
+  yourHealth = yourHealth - 15;
 	runBtn.disabled = false;
 	atackBtn.disabled = false;
 	keepGoingBtn.disabled = true;
 }
 
 function haveKilled() {
-	storyLine.innerHTML = killedEnemyMessage;
+	say(killedEnemyMessage);
   killedMonst = killedMonst + 1;
   runBtn.disabled = true;
   atackBtn.disabled = true;
@@ -35,13 +39,13 @@ function haveKilled() {
 }
 
 function haveBeenChased() {
-	storyLine.innerHTML = noEscapeMessage;
+	say(noEscapeMessage);
   runBtn.disabled = true;
   keepGoingBtn.disabled = true;
 }
 
 function haveSmashed() {
-	storyLine.innerHTML = smashingRunnerMessage;
+	say(smashingRunnerMessage);
   runBtn.disabled = true;
   atackBtn.disabled = true;
   keepGoingBtn.disabled = false;
@@ -49,7 +53,7 @@ function haveSmashed() {
 }
 
 function haveRunAway() {
-	storyLine.innerHTML = hasRunAwayMessage;
+	say(hasRunAwayMessage);
   keepGoingBtn.disabled = false;
   atackBtn.disabled = true;
   runBtn.disabled = true;
@@ -94,12 +98,12 @@ function checkIfNotAWinner() {
 
 								
 function refresh() {
-	storyLine.innerHTML = enemyIsHereMessage;
+	say(enemyIsHereMessage);
 }
 
 function checkIfNotDead() {
 	if (yourHealth <= 0) {
-				storyLine.innerHTML = deathMessage;
+				say(deathMessage);
         runBtn.disabled = true;
         atackBtn.disabled = true;
         keepGoingBtn.disabled = true;
