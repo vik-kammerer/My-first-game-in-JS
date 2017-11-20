@@ -1,4 +1,4 @@
-let killedMonst				=		0;
+let monstersLeft			=		15;
 let yourHealth				=		100;
 let yourLuck;
 
@@ -32,7 +32,7 @@ function haveBeenHurt() {
 
 function haveKilled() {
 	say(killedEnemyMessage);
-  killedMonst = killedMonst + 1;
+  monstersLeft = monstersLeft - 1;
   runBtn.disabled = true;
   atackBtn.disabled = true;
   keepGoingBtn.disabled = false;
@@ -49,7 +49,7 @@ function haveSmashed() {
   runBtn.disabled = true;
   atackBtn.disabled = true;
   keepGoingBtn.disabled = false;
-  killedMonst = killedMonst + 3;
+  monstersLeft = monstersLeft - 3;
 }
 
 function haveRunAway() {
@@ -64,7 +64,13 @@ function displayTryAgainBtn() {
 	}							
 								
 function updateKilledCounter() {
-	killedCounter.innerHTML = killedMonst;
+  if (monstersLeft > 0)  {
+	  killedCounter.innerHTML = monstersLeft;
+    }
+    else
+    {
+      killedCounter.innerHTML = "0";
+    }
 	}
 
 function updateHealthMonitor() {
@@ -87,7 +93,7 @@ function updateLuckMonitor() {
 }
 
 function checkIfNotAWinner() {
-		if (killedMonst >= 15) {	
+		if (monstersLeft <= 0) {	
 			storyLine.append(winningMessage);
 			runBtn.disabled = true;
 			atackBtn.disabled = true;

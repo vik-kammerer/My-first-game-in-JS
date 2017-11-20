@@ -12,7 +12,7 @@ function attack() {
           
     else {
         haveKilled();
-        logKilledMonsters();
+        logMonstersLeft();
         logLuck();
       }
         checkIfNotAWinner();

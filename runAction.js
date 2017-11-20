@@ -8,7 +8,7 @@ function run() {
     
     else if (yourLuck > 70) {
       haveSmashed();
-      logKilledMonsters()
+      logMonstersLeft()
       logLuck();
               
       }

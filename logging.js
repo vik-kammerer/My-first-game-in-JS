@@ -12,8 +12,8 @@ function logHealth() {
 }
 
 
-function logKilledMonsters() {
+function logMonstersLeft() {
   console.log(
-    `${killedMonst} monster(s) defeated`
+    `${monstersLeft} monster(s) left`
   );
 }
