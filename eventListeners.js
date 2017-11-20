@@ -9,3 +9,7 @@ $('#run').click(
 $('#keepGoing').click(
   () => {keepGoing()}
 );
+
+$('#tryAgain').click(
+  () => {location.reload()}
+);
