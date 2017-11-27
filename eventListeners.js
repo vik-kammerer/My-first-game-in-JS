@@ -21,3 +21,16 @@ $('#tryAgain').click(
         location.reload()
     }
 );
+
+
+$('#drinkButton').click(
+    () => {
+        drinkElixir()
+    }
+);
+
+ $("#drinkButton").hover(function () {
+ 
+    $(this).toggleClass("drinkButtonHover");
+    
+ });

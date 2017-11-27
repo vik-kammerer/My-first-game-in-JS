@@ -6,6 +6,8 @@ const atackBtn            =   document.getElementById("attack");
 const keepGoingBtn        =   document.getElementById("keepGoing"); 
 const monstersLeftMonitor =   document.getElementById("monstersLeft");
 const yourLuckMonitor     =   document.getElementById("yourLuckMonitor");
+const yourElixirsMonitor  =   document.getElementById("yourElixirsMonitor");
+const drinkButton         =   document.getElementById("drinkButton");
 const tryAgain            =   document.getElementById("tryAgain");
 
 
@@ -70,6 +72,12 @@ function updateMonstersLeftMonitor() {
       monstersLeft.innerHTML = "0";
     }
   }
+
+ function updateElixirsMonitor() {
+ 
+    yourElixirsMonitor.innerHTML = elixirs;
+
+ } 
 
 //--------------------StoryLine behavior goes here----------------------------
 function say(message) {

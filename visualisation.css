@@ -1,10 +1,21 @@
 body {
+/*	transform: scale(1.3);*/
+   
 	background-color: #F5F5F5;
 	font-family: book antiqua;
 	font-size: 19px;
 	
 }
 
+.drinkButtonHover {
+	font-weight: bolder;
+	color: #5F9EA0;
+	cursor: pointer;
+}
+
+.counter {
+	text-align: right;
+}
 
 #tryAgain {
 	display: none;

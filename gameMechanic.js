@@ -2,6 +2,7 @@
 let monstersLeft			=		15;
 let yourHealth				=		100;
 let yourLuck          =   undefined;
+let elixirs           =   3;
 
 //--------------------Random luck generator goes here--------------------
 function getRandom() {
@@ -47,6 +48,15 @@ function haveSmashed() {
 function haveRunAway() {
 	say(hasRunAwayMessage);
   setKeepGoing();
+}
+
+function drinkElixir() {
+  if (elixirs != 0) {
+  yourHealth = yourHealth + 15;
+  elixirs = elixirs - 1;
+  updateHealthMonitor();
+  updateElixirsMonitor()
+  }
 }
 
 
