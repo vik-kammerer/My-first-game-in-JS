@@ -1,7 +1,7 @@
 //--------------------Initial parameters go here-------------------------
 let monstersLeft			=		15;
 let yourHealth				=		100;
-let yourLuck;
+let yourLuck          =   undefined;
 
 //--------------------Random luck generator goes here--------------------
 function getRandom() {
@@ -24,7 +24,7 @@ function tryYourLuck() {
 function haveBeenHurt() {
 	say(painMessage);
   yourHealth = yourHealth - 15;
-	setRunOrAttack()
+	setRunOrAttack();
 }
 
 function haveKilled() {

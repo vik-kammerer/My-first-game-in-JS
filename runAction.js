@@ -2,7 +2,7 @@ function run() {
       yourLuck = tryYourLuck();
                   
     if (yourLuck < 50) {
-      haveBeenChased()
+      haveBeenChased();
       logLuck();
       }
     
@@ -20,5 +20,5 @@ function run() {
                 
       checkIfNotAWinner();
       updateMonstersLeftMonitor();
-      updateLuckMonitor()
+      updateLuckMonitor();
   }
