@@ -25,38 +25,29 @@ function say(message) {
 function haveBeenHurt() {
 	say(painMessage);
   yourHealth = yourHealth - 15;
-	runBtn.disabled = false;
-	atackBtn.disabled = false;
-	keepGoingBtn.disabled = true;
+	setRunOrAttack()
 }
 
 function haveKilled() {
 	say(killedEnemyMessage);
   monstersLeft = monstersLeft - 1;
-  runBtn.disabled = true;
-  atackBtn.disabled = true;
-  keepGoingBtn.disabled = false;
+  setKeepGoing();
 }
 
 function haveBeenChased() {
 	say(noEscapeMessage);
-  runBtn.disabled = true;
-  keepGoingBtn.disabled = true;
+  setAttackOnly();
 }
 
 function haveSmashed() {
 	say(smashingRunnerMessage);
-  runBtn.disabled = true;
-  atackBtn.disabled = true;
-  keepGoingBtn.disabled = false;
+  setKeepGoing();
   monstersLeft = monstersLeft - 3;
 }
 
 function haveRunAway() {
 	say(hasRunAwayMessage);
-  keepGoingBtn.disabled = false;
-  atackBtn.disabled = true;
-  runBtn.disabled = true;
+  setKeepGoing();
 }
 
 function displayTryAgainBtn() {
@@ -95,9 +86,7 @@ function updateLuckMonitor() {
 function checkIfNotAWinner() {
 		if (monstersLeft <= 0) {	
 			storyLine.append(winningMessage);
-			runBtn.disabled = true;
-			atackBtn.disabled = true;
-			keepGoingBtn.disabled = true;
+			setAllDisabled();
 			displayTryAgainBtn();
 		}
 	}
@@ -110,9 +99,7 @@ function refresh() {
 function checkIfNotDead() {
 	if (yourHealth <= 0) {
 				say(deathMessage);
-        runBtn.disabled = true;
-        atackBtn.disabled = true;
-        keepGoingBtn.disabled = true;
+        setAllDisabled();
         displayTryAgainBtn();
 	}
 }
