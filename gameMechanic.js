@@ -3,6 +3,7 @@ let monstersLeft			=		15;
 let yourHealth				=		100;
 let yourLuck          =   undefined;
 let elixirs           =   3;
+let gameCase          =   undefined;
 
 //--------------------Random luck generator goes here--------------------
 function getRandom() {
@@ -22,6 +23,13 @@ function tryYourLuck() {
 
 
 //-------------------------Game cases go here-----------------------------
+function haveFoundChest() {
+  setYesOrNoMode();
+  say(chestDetectedMessage);
+  gameCase = "chestDetected";
+
+}
+
 function haveBeenHurt() {
 	say(painMessage);
   yourHealth = yourHealth - 15;
@@ -55,7 +63,7 @@ function drinkElixir() {
   yourHealth = yourHealth + 15;
   elixirs = elixirs - 1;
   updateHealthMonitor();
-  updateElixirsMonitor()
+  updateElixirsMonitor();
   }
 }
 

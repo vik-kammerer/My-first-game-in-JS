@@ -29,6 +29,18 @@ $('#drinkButton').click(
     }
 );
 
+$('#Yes').click(
+    () => {
+        chooseYes()
+    }
+);
+
+$('#No').click(
+    () => {
+        chooseNo()
+    }
+);
+
  $("#drinkButton").hover(function () {
  
     $(this).toggleClass("drinkButtonHover");

@@ -13,6 +13,22 @@ const tryAgain            =   document.getElementById("tryAgain");
 
 
 //--------------------Buttons' accessibility logic goes here------------------
+function setRunOrAttackMode() {
+  runBtn.value = "Run!";
+  atackBtn.value = "Attack!";
+  runBtn.id = "run";
+  atackBtn.id = "attack";  
+  keepGoingBtn.disabled = false;
+}
+
+function setYesOrNoMode() {
+  runBtn.value = "No...";
+  atackBtn.value = "Yes!";
+  runBtn.id = "No";
+  atackBtn.id = "Yes";  
+  keepGoingBtn.disabled = true;
+}
+
 function setKeepGoing() {
   runBtn.disabled = true;
   atackBtn.disabled = true;
@@ -93,6 +109,13 @@ function say(message) {
   storyLine.innerHTML = message;
 }
 
-function refresh() {
-  say(enemyIsHereMessage);
+function moveStory() {
+tryYourLuck();
+  if (yourLuck >= 60) {
+    haveFoundChest();
+  }
+  else {
+    say(enemyIsHereMessage);
+  }
+
 }
