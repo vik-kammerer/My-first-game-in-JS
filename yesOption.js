@@ -1,7 +1,7 @@
-chooseYes() {
+function chooseYes() {
   tryYourLuck();
   if (gameCase = "chestDetected" && yourLuck > 60) {
-    elixir++;
+    elixirs++;
     updateElixirsMonitor();
     say(elixirFoundMessage);
     setRunOrAttackMode();
