@@ -39,6 +39,12 @@ function setAllDisabled() {
 
 function displayTryAgainBtn() {
   tryAgain.style.display = "block";
+}
+
+function hideDrinkButtonIfNone() {
+  if (elixirs < 1) {
+    drinkButton.style.display = "none";
+  }
 } 
 
 
@@ -76,8 +82,8 @@ function updateMonstersLeftMonitor() {
  function updateElixirsMonitor() {
  
     yourElixirsMonitor.innerHTML = elixirs;
-
- } 
+    hideDrinkButtonIfNone();
+} 
 
 //--------------------StoryLine behavior goes here----------------------------
 function say(message) {

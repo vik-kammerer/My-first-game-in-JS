@@ -28,11 +28,12 @@ body {
 
 table {
 
-font-size: 15px;
+font-size: 19px;
 
 }
 
 input {
+	font-size: 19px;
 	cursor: pointer;
 	font-family: book antiqua;
 	
