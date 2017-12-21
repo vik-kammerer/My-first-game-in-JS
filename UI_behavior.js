@@ -45,6 +45,9 @@ function hideDrinkButtonIfNone() {
   if (elixirs < 1) {
     drinkButton.style.display = "none";
   }
+  else {
+    drinkButton.style.display = "block";
+  }
 } 
 
 
