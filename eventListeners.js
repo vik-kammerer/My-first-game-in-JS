@@ -1,3 +1,5 @@
+//noBtn.addEventListener("click", chooseNo);
+
 $('#attack').click(
     () => {
         attack()
@@ -29,13 +31,13 @@ $('#drinkButton').click(
     }
 );
 
-$('#Yes').click(
+$('#yes').click(
     () => {
         chooseYes()
     }
 );
 
-$('#No').click(
+$('#no').click(
     () => {
         chooseNo()
     }

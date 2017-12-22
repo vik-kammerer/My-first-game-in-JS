@@ -110,11 +110,14 @@ function say(message) {
 
 function moveStory() {
 tryYourLuck();
+updateLuckMonitor();
   if (yourLuck >= 60) {
     haveFoundChest();
   }
   else {
     say(enemyIsHereMessage);
+    setRunOrAttack();
+
   }
 
 }

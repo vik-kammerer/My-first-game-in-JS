@@ -1,5 +1,4 @@
 function chooseNo() {
-    setRunOrAttackMode();
-    gameCase = undefined;
+    gameCase = "seeking";
     moveStory();
 }
