@@ -1,12 +1,22 @@
 function chooseYes() {
-  tryYourLuck();
-  if (gameCase = "chestDetected" && yourLuck > 60) {
+  yourLuck = tryYourLuck();
+  updateLuckMonitor();
+  if (gameCase = "chestDetected" && yourLuck >= 60) {
     elixirs++;
     updateElixirsMonitor();
     say(elixirFoundMessage);
     setRunOrAttackMode();
     setKeepGoing();
   }
+
+  else if (gameCase = "chestDetected" && yourLuck < 60) {
+    say(explodedChestMessage);
+    yourHealth = yourHealth - 40;
+    updateHealthMonitor();
+    setRunOrAttackMode();
+    setKeepGoing();
+  }
+
   else {
     say(emptyChestMessage);
     setRunOrAttackMode();
