@@ -15,6 +15,7 @@ function chooseYes() {
     updateHealthMonitor();
     setRunOrAttackMode();
     setKeepGoing();
+    checkIfNotDead();
   }
 
   else {
