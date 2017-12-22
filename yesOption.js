@@ -5,9 +5,11 @@ function chooseYes() {
     updateElixirsMonitor();
     say(elixirFoundMessage);
     setRunOrAttackMode();
+    setKeepGoing();
   }
   else {
     say(emptyChestMessage);
     setRunOrAttackMode();
+    setKeepGoing();
   }
 }

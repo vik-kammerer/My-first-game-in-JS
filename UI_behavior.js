@@ -109,7 +109,7 @@ function say(message) {
 }
 
 function moveStory() {
-tryYourLuck();
+yourLuck = tryYourLuck();
 updateLuckMonitor();
   if (yourLuck >= 60) {
     haveFoundChest();
