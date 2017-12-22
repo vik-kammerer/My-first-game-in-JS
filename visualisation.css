@@ -7,6 +7,14 @@ body {
 	
 }
 
+#yesOrNoMode {
+	display:none;
+}
+
+.runOrAttackMode {
+	display:block;
+}
+
 .drinkButtonHover {
 	font-weight: bolder;
 	color: #5F9EA0;
@@ -36,6 +44,7 @@ input {
 	font-size: 19px;
 	cursor: pointer;
 	font-family: book antiqua;
+	
 	
 }
 

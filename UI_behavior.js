@@ -8,25 +8,24 @@ const monstersLeftMonitor =   document.getElementById("monstersLeft");
 const yourLuckMonitor     =   document.getElementById("yourLuckMonitor");
 const yourElixirsMonitor  =   document.getElementById("yourElixirsMonitor");
 const drinkButton         =   document.getElementById("drinkButton");
-const tryAgain            =   document.getElementById("tryAgain");
+const tryAgainBtn         =   document.getElementById("tryAgain");
+const yesBtn              =   document.getElementById("yes");
+const noBtn               =   document.getElementById("no");
+const yesOrNoMode         =   document.getElementById("yesOrNoMode");
+const runOrAttackMode     =   document.getElementById("runOrAttackMode");
 
 
 
 //--------------------Buttons' accessibility logic goes here------------------
 function setRunOrAttackMode() {
-  runBtn.value = "Run!";
-  atackBtn.value = "Attack!";
-  runBtn.id = "run";
-  atackBtn.id = "attack";  
-  keepGoingBtn.disabled = false;
+  yesOrNoMode.style.display = "none";
+  runOrAttackMode.style.display = "block"
 }
 
 function setYesOrNoMode() {
-  runBtn.value = "No...";
-  atackBtn.value = "Yes!";
-  runBtn.id = "No";
-  atackBtn.id = "Yes";  
-  keepGoingBtn.disabled = true;
+  runOrAttackMode.style.display = "none"
+  yesOrNoMode.style.display = "block";
+
 }
 
 function setKeepGoing() {
@@ -119,3 +118,5 @@ tryYourLuck();
   }
 
 }
+
+
