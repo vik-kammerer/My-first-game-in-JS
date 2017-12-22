@@ -75,6 +75,7 @@ function updateLuckMonitor() {
 function updateHealthMonitor() {
   if (yourHealth >= 20 ) {
   yourHealthMonitor.innerHTML = yourHealth;
+  yourHealthMonitor.style.color = "black";
   }
 
   else if (yourHealth < 20 && yourHealth > 0) {
