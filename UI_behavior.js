@@ -94,7 +94,7 @@ function updateMonstersLeftMonitor() {
     }
     else
     {
-      monstersLeft.innerHTML = "0";
+      monstersLeftMonitor.innerHTML = "0";
     }
   }
 

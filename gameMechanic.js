@@ -74,6 +74,7 @@ function checkIfNotAWinner() {
 			storyLine.append(winningMessage);
 			setAllDisabled();
 			displayTryAgainBtn();
+      
 		}
 	}
 
@@ -83,6 +84,7 @@ function checkIfNotDead() {
 				say(deathMessage);
         setAllDisabled();
         displayTryAgainBtn();
+
 	}
 }
 								
