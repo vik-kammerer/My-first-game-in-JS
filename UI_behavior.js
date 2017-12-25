@@ -1,18 +1,19 @@
 //--------------------All UI elements' identifiers go here--------------------
-const yourHealthMonitor   =   document.getElementById("yourHealthMonitor");
-const storyLine           =   document.getElementById("storyLine");
-const runBtn              =   document.getElementById("run");
-const atackBtn            =   document.getElementById("attack");
-const keepGoingBtn        =   document.getElementById("keepGoing"); 
-const monstersLeftMonitor =   document.getElementById("monstersLeft");
-const yourLuckMonitor     =   document.getElementById("yourLuckMonitor");
-const yourElixirsMonitor  =   document.getElementById("yourElixirsMonitor");
-const drinkButton         =   document.getElementById("drinkButton");
-const tryAgainBtn         =   document.getElementById("tryAgain");
-const yesBtn              =   document.getElementById("yes");
-const noBtn               =   document.getElementById("no");
-const yesOrNoMode         =   document.getElementById("yesOrNoMode");
-const runOrAttackMode     =   document.getElementById("runOrAttackMode");
+const yourHealthMonitor     =   document.getElementById("yourHealthMonitor");
+const storyLine             =   document.getElementById("storyLine");
+const runBtn                =   document.getElementById("run");
+const atackBtn              =   document.getElementById("attack");
+const keepGoingBtn          =   document.getElementById("keepGoing"); 
+const monstersLeftMonitor   =   document.getElementById("monstersLeft");
+const yourLuckMonitor       =   document.getElementById("yourLuckMonitor");
+const yourElixirsMonitor    =   document.getElementById("yourElixirsMonitor");
+const drinkButton           =   document.getElementById("drinkButton");
+const tryAgainBtn           =   document.getElementById("tryAgain");
+const yesBtn                =   document.getElementById("yes");
+const noBtn                 =   document.getElementById("no");
+const yesOrNoMode           =   document.getElementById("yesOrNoMode");
+const runOrAttackMode       =   document.getElementById("runOrAttackMode");
+const LuckDecrementMonitor  =   document.getElementById("luckDecrementMonitor");
 
 
 
@@ -69,7 +70,11 @@ function hideDrinkButtonIfNone() {
 
 //--------------------Counters' behavior goes here----------------------------
 function updateLuckMonitor() {
-  yourLuckMonitor.innerHTML = yourLuck;
+  yourLuckMonitor.innerHTML = yourLuck - luckDecrement;
+}
+
+function updateLuckDecrementMonitor() {
+  luckDecrementMonitor.innerHTML = luckDecrement;
 }
 
 function updateHealthMonitor() {
@@ -110,7 +115,7 @@ function say(message) {
 }
 
 function moveStory() {
-yourLuck = tryYourLuck();
+yourLuck = tryYourLuck() - luckDecrement;
 updateLuckMonitor();
   if (yourLuck >= 60) {
     haveFoundChest();

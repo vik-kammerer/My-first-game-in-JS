@@ -1,5 +1,5 @@
 function attack() {
-      yourLuck = tryYourLuck();
+      yourLuck = tryYourLuck() - luckDecrement;
                         
     if (yourLuck < 50) {
         haveBeenHurt()

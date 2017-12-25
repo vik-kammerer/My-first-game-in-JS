@@ -10,3 +10,4 @@ const chestDetectedMessage    =   "You have found an old dark chest. Will you op
 const elixirFoundMessage      =   "There is an elixir inside!";
 const emptyChestMessage       =   "There is nothing inside...";
 const explodedChestMessage    =   "BOOM!!! The chest has exploded...";
+const beingCowardMessage      =   "The danger left behind, but Gods hate cowards!";

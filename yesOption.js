@@ -1,5 +1,5 @@
 function chooseYes() {
-  yourLuck = tryYourLuck();
+  yourLuck = tryYourLuck() - luckDecrement;
   updateLuckMonitor();
   if (gameCase = "chestDetected" && yourLuck >= 60) {
     elixirs++;

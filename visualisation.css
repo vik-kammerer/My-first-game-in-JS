@@ -25,6 +25,11 @@ body {
 	text-align: right;
 }
 
+#luckDecrementMonitor {
+	color: red;
+	font-size: 14px;
+}
+
 #tryAgain {
 	display: none;
 }
