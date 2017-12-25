@@ -76,6 +76,7 @@ function updateLuckMonitor() {
 function updateLuckDecrementMonitor() {
   if (luckDecrement < 0) {
   luckDecrementMonitor.innerHTML = luckDecrement;
+  luckDecrementMonitor.style.display = "block";
   }
   else {
     luckDecrementMonitor.style.display = "none";
