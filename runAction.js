@@ -17,6 +17,8 @@ function run() {
       say(beingCowardMessage);
       luckDecrement = luckDecrement - 10;
       updateLuckDecrementMonitor();
+      setKeepGoing();
+      logLuck();
               
       }
     

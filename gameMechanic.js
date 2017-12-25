@@ -28,7 +28,12 @@ function haveFoundChest() {
   setYesOrNoMode();
   say(chestDetectedMessage);
   gameCase = "chestDetected";
+}
 
+function haveFoundPrisoner() {
+  setYesOrNoMode();
+  say(prisonerDetectedMessage);
+  gameCase = "prisonerDetected";
 }
 
 function haveBeenHurt() {

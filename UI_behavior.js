@@ -13,7 +13,7 @@ const yesBtn                =   document.getElementById("yes");
 const noBtn                 =   document.getElementById("no");
 const yesOrNoMode           =   document.getElementById("yesOrNoMode");
 const runOrAttackMode       =   document.getElementById("runOrAttackMode");
-const LuckDecrementMonitor  =   document.getElementById("luckDecrementMonitor");
+const luckDecrementMonitor  =   document.getElementById("luckDecrementMonitor");
 
 
 
@@ -74,7 +74,12 @@ function updateLuckMonitor() {
 }
 
 function updateLuckDecrementMonitor() {
+  if (luckDecrement < 0) {
   luckDecrementMonitor.innerHTML = luckDecrement;
+  }
+  else {
+    luckDecrementMonitor.style.display = "none";
+  }
 }
 
 function updateHealthMonitor() {
@@ -111,7 +116,7 @@ function updateMonstersLeftMonitor() {
 
 //--------------------StoryLine behavior goes here----------------------------
 function say(message) {
-  storyLine.innerHTML = message;
+  storyContent.innerHTML = message;
 }
 
 function moveStory() {
@@ -120,6 +125,11 @@ updateLuckMonitor();
   if (yourLuck >= 60) {
     haveFoundChest();
   }
+
+  else if (yourLuck < 60 && yourLuck > 50) {
+    haveFoundPrisoner();
+  }
+
   else {
     say(enemyIsHereMessage);
     setRunOrAttack();
