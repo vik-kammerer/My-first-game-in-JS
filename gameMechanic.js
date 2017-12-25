@@ -82,7 +82,7 @@ function drinkElixir() {
 //-------------------------Final conclusions go here----------------------
 function checkIfNotAWinner() {
 		if (monstersLeft <= 0) {	
-			storyLine.append(winningMessage);
+			storyContent.append(winningMessage);
 			setAllDisabled();
 			displayTryAgainBtn();
       
