@@ -81,7 +81,7 @@ function checkIfNotAWinner() {
 								
 function checkIfNotDead() {
 	if (yourHealth <= 0) {
-				say(deathMessage);
+				storyLine.append(deathMessage);
         setAllDisabled();
         displayTryAgainBtn();
 
