@@ -20,16 +20,15 @@ function checkPriorGameCase(thisGameCase) {
 function moveStory() {
 yourLuck = tryYourLuck() - luckDecrement;
 updateLuckMonitor();
-  if (yourLuck >= 60) {
+  if (yourLuck >= 60 && checkPriorGameCase("chestDetected") === false) {
     haveFoundChest();
   }
 
-  else if (yourLuck < 60 && yourLuck > 50) {
+  else if (yourLuck >= 60 && checkPriorGameCase("prisonerDetected") === false) {
     haveFoundPrisoner();
   }
 
   else {
-    gameCase = undefined;
     say(enemyIsHereMessage);
     setRunOrAttack();
 
