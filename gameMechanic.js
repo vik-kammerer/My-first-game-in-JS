@@ -83,9 +83,10 @@ function drinkElixir() {
 //-------------------------Final conclusions go here----------------------
 function checkIfNotAWinner() {
 		if (monstersLeft <= 0) {	
-			storyContent.append(winningMessage);
+			//storyContent.append(winningMessage);
 			setAllDisabled();
 			displayTryAgainBtn();
+      congratOnWinning();
       
 		}
 	}
@@ -93,9 +94,12 @@ function checkIfNotAWinner() {
 								
 function checkIfNotDead() {
 	if (yourHealth <= 0) {
-				storyContent.append(deathMessage);
+				
         setAllDisabled();
         displayTryAgainBtn();
+        congratOnDeath(); 
+
+        
 
 	}
 }
