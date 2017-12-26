@@ -1,0 +1,4 @@
+function keepGoing() {
+  setRunOrAttack();
+  moveStory();
+}
