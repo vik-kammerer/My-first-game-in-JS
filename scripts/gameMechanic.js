@@ -5,6 +5,7 @@ let yourLuck          =   undefined;
 let luckDecrement     =   0;
 let elixirs           =   3;
 let gameCase          =   undefined;
+let priorGameCase     =   undefined;
 
 //--------------------Random luck generator goes here--------------------
 function getRandom() {

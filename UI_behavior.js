@@ -115,28 +115,6 @@ function updateMonstersLeftMonitor() {
     hideDrinkButtonIfNone();
 } 
 
-//--------------------StoryLine behavior goes here----------------------------
-function say(message) {
-  storyContent.innerHTML = message;
-}
 
-function moveStory() {
-yourLuck = tryYourLuck() - luckDecrement;
-updateLuckMonitor();
-  if (yourLuck >= 60) {
-    haveFoundChest();
-  }
-
-  else if (yourLuck < 60 && yourLuck > 50) {
-    haveFoundPrisoner();
-  }
-
-  else {
-    say(enemyIsHereMessage);
-    setRunOrAttack();
-
-  }
-
-}
 
 
