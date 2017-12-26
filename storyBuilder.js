@@ -1,8 +1,4 @@
 //--------------------StoryLine behavior goes here----------------------------
-function say(message) {
-  storyContent.innerHTML = message;
-}
-
 function refreshStoryEvents() {
   priorGameCase = gameCase;
   gameCase = undefined;
