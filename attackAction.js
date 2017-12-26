@@ -12,10 +12,10 @@ function attack() {
           
     else {
         haveKilled();
+        updateMonstersLeftMonitor();
         logMonstersLeft();
         logLuck();
       }
         checkIfNotAWinner();
-        updateMonstersLeftMonitor();
         updateLuckMonitor()
   }

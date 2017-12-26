@@ -8,6 +8,7 @@ function run() {
     
     else if (yourLuck >= 70) {
       haveSmashed();
+      updateMonstersLeftMonitor();
       logMonstersLeft()
       logLuck();
               
@@ -28,6 +29,5 @@ function run() {
       }
                 
       checkIfNotAWinner();
-      updateMonstersLeftMonitor();
       updateLuckMonitor();
   }

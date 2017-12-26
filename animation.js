@@ -20,3 +20,9 @@ function say(message) {
       $(storyContent).append(deathMessage).fadeIn(200);
     }, 205);
  } 
+
+
+ function updateMonitor(monitorType) {
+
+  
+ }

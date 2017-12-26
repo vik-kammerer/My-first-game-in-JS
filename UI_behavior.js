@@ -70,7 +70,9 @@ function hideDrinkButtonIfNone() {
 
 //--------------------Counters' behavior goes here----------------------------
 function updateLuckMonitor() {
+  $(yourLuckMonitor).hide();
   yourLuckMonitor.innerHTML = yourLuck - luckDecrement;
+  $(yourLuckMonitor).fadeIn(200);
 }
 
 function updateLuckDecrementMonitor() {
@@ -85,33 +87,45 @@ function updateLuckDecrementMonitor() {
 
 function updateHealthMonitor() {
   if (yourHealth >= 20 ) {
-  yourHealthMonitor.innerHTML = yourHealth;
-  yourHealthMonitor.style.color = "black";
+    $(yourHealthMonitor).hide();
+    yourHealthMonitor.innerHTML = yourHealth;
+    yourHealthMonitor.style.color = "black";
+    $(yourHealthMonitor).fadeIn(200);
   }
 
   else if (yourHealth < 20 && yourHealth > 0) {
-  yourHealthMonitor.innerHTML = yourHealth;
-  yourHealthMonitor.style.color = "red";
+    $(yourHealthMonitor).hide();
+    yourHealthMonitor.innerHTML = yourHealth;
+    yourHealthMonitor.style.color = "red";
+    $(yourHealthMonitor).fadeIn(200);
   }
 
   else{
-  yourHealthMonitor.innerHTML = 0;
+    $(yourHealthMonitor).hide();
+    yourHealthMonitor.innerHTML = 0;
+    $(yourHealthMonitor).fadeIn(200);
   }
 }
 
 function updateMonstersLeftMonitor() {
   if (monstersLeft > 0)  {
+    $(monstersLeftMonitor).hide();
     monstersLeftMonitor.innerHTML = monstersLeft;
+    $(monstersLeftMonitor).fadeIn(200);
     }
     else
     {
+      $(monstersLeftMonitor).hide();
       monstersLeftMonitor.innerHTML = "0";
+      $(monstersLeftMonitor).fadeIn(200);
     }
   }
 
  function updateElixirsMonitor() {
  
+    $(yourElixirsMonitor).hide();
     yourElixirsMonitor.innerHTML = elixirs;
+    $(yourElixirsMonitor).fadeIn(200);
     hideDrinkButtonIfNone();
 } 
 
