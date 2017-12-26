@@ -26,7 +26,6 @@ function setRunOrAttackMode() {
 function setYesOrNoMode() {
   runOrAttackMode.style.display = "none"
   yesOrNoMode.style.display = "block";
-
 }
 
 function setKeepGoing() {
