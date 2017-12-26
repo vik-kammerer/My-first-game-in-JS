@@ -1,5 +1,6 @@
 function chooseNo() {
+    refreshStoryEvents();
     setRunOrAttackMode();
     moveStory();
-    refreshStoryEvents();
+
 }
