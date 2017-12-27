@@ -3,7 +3,7 @@ let monstersLeft			=		15;
 let yourHealth				=		100;
 let yourLuck          =   undefined;
 let luckDecrement     =   0;
-let elixirs           =   3;
+let elixirs           =   0;
 let gameCase          =   undefined;
 let priorGameCase     =   undefined;
 

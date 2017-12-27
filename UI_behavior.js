@@ -56,12 +56,12 @@ function displayTryAgainBtn() {
   tryAgain.style.display = "block";
 }
 
-function hideDrinkButtonIfNone() {
-  if (elixirs < 1) {
-    drinkButton.style.display = "none";
+function hideDrinkButtonIfNoNeed() {
+  if (elixirs < 1 || yourHealth >= 100) {
+    $(drinkButton).fadeOut(200);
   }
   else {
-    drinkButton.style.display = "block";
+    $(drinkButton).fadeIn(200);
   }
 } 
 
@@ -125,7 +125,7 @@ function updateMonstersLeftMonitor() {
     $(yourElixirsMonitor).hide();
     yourElixirsMonitor.innerHTML = elixirs;
     $(yourElixirsMonitor).fadeIn(200);
-    hideDrinkButtonIfNone();
+    hideDrinkButtonIfNoNeed();
 } 
 
 

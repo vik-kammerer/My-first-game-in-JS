@@ -21,6 +21,10 @@ body {
 	cursor: pointer;
 }
 
+#drinkButton {
+	display: none;
+}
+
 .counter {
 	text-align: right;
 }
