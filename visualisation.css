@@ -25,14 +25,15 @@ body {
 	color: #006400;
 }
 
-.counter {
-	text-align: right;
-}
+
 
 #luckDecrementMonitor {
 	color: red;
 	font-size: 14px;
 	display: block;
+	vertical-align: middle;
+	width: 30px;
+	height: 32px;
 }
 
 #tryAgain {
@@ -45,8 +46,21 @@ body {
 }
 
 table {
+border-collapse: collapse;
 
 font-size: 19px;
+table-layout: fixed;
+}
+
+.table_label {
+	width: 119px;
+	height: 32px;
+}
+
+.monitor {
+	text-align: right;
+	width: 30px;
+	height: 32px;
 
 }
 

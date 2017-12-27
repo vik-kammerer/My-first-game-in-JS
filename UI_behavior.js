@@ -111,8 +111,8 @@ function updateMonstersLeftMonitor() {
     $(monstersLeftMonitor).hide();
     monstersLeftMonitor.innerHTML = monstersLeft;
     $(monstersLeftMonitor).fadeIn(animationCycle);
-    }
-    else
+  }
+  else
     {
       $(monstersLeftMonitor).hide();
       monstersLeftMonitor.innerHTML = "0";
