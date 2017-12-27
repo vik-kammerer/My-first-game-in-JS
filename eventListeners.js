@@ -43,8 +43,12 @@ $('#no').click(
     }
 );
 
- $("#drinkButton").hover(function () {
- 
-    $(this).toggleClass("drinkButtonHover");
-    
- });
+
+
+$("#drinkButton").mouseover(function () {
+    drinkButton.style.color = "#66a266";
+});
+
+$("#drinkButton").mouseout(function () {
+    drinkButton.style.color = "";
+});
