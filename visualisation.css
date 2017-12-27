@@ -1,6 +1,6 @@
 body {
-/*	transform: scale(1.3);*/
-   
+
+  cursor:default; 
 	background-color: #F5F5F5;
 	font-family: book antiqua;
 	font-size: 19px;
@@ -15,11 +15,6 @@ body {
 	display:block;
 }
 
-/*.drinkButtonHover {
-	font-weight: bolder;
-	color: #5F9EA0;
-	cursor: pointer;
-}*/
 
 #drinkButton {
 	display: none;
