@@ -6,7 +6,7 @@ function attack() {
         logLuck();
         logHealth();
         updateHealthMonitor();
-        updateLuckMonitor()
+        updateLuckMonitor();
         checkIfNotDead();
       }
           
@@ -14,8 +14,9 @@ function attack() {
         haveKilled();
         updateMonstersLeftMonitor();
         logMonstersLeft();
+        updateLuckMonitor();
         logLuck();
       }
         checkIfNotAWinner();
-        updateLuckMonitor()
+        
   }

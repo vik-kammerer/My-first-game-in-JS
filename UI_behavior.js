@@ -68,22 +68,6 @@ function hideDrinkButtonIfNoNeed() {
 
 
 //--------------------Counters' behavior goes here----------------------------
-function updateLuckMonitor() {
-  $(yourLuckMonitor).hide();
-  yourLuckMonitor.innerHTML = yourLuck - luckDecrement;
-  $(yourLuckMonitor).fadeIn(animationCycle);
-}
-
-function updateLuckDecrementMonitor() {
-  if (luckDecrement < 0) {
-  luckDecrementMonitor.innerHTML = luckDecrement;
-  luckDecrementMonitor.style.display = "block";
-  }
-  else {
-    luckDecrementMonitor.style.display = "none";
-  }
-}
-
 function updateHealthMonitor() {
   if (yourHealth >= 20 ) {
     $(yourHealthMonitor).hide();
@@ -105,6 +89,23 @@ function updateHealthMonitor() {
     $(yourHealthMonitor).fadeIn(animationCycle);
   }
 }
+
+function updateLuckMonitor() {
+  $(yourLuckMonitor).hide();
+  yourLuckMonitor.innerHTML = yourLuck - luckDecrement;
+  $(yourLuckMonitor).fadeIn(animationCycle);
+}
+
+function updateLuckDecrementMonitor() {
+  if (luckDecrement < 0) {
+  luckDecrementMonitor.innerHTML = luckDecrement;
+  luckDecrementMonitor.style.display = "block";
+  }
+  else {
+    luckDecrementMonitor.style.display = "none";
+  }
+}
+
 
 function updateMonstersLeftMonitor() {
   if (monstersLeft > 0)  {
