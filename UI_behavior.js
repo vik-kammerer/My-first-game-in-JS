@@ -58,10 +58,10 @@ function displayTryAgainBtn() {
 
 function hideDrinkButtonIfNoNeed() {
   if (elixirs < 1 || yourHealth >= 100) {
-    $(drinkButton).fadeOut(200);
+    $(drinkButton).fadeOut(animationCycle);
   }
   else {
-    $(drinkButton).fadeIn(200);
+    $(drinkButton).fadeIn(animationCycle);
   }
 } 
 
@@ -71,7 +71,7 @@ function hideDrinkButtonIfNoNeed() {
 function updateLuckMonitor() {
   $(yourLuckMonitor).hide();
   yourLuckMonitor.innerHTML = yourLuck - luckDecrement;
-  $(yourLuckMonitor).fadeIn(200);
+  $(yourLuckMonitor).fadeIn(animationCycle);
 }
 
 function updateLuckDecrementMonitor() {
@@ -89,20 +89,20 @@ function updateHealthMonitor() {
     $(yourHealthMonitor).hide();
     yourHealthMonitor.innerHTML = yourHealth;
     yourHealthMonitor.style.color = "black";
-    $(yourHealthMonitor).fadeIn(200);
+    $(yourHealthMonitor).fadeIn(animationCycle);
   }
 
   else if (yourHealth < 20 && yourHealth > 0) {
     $(yourHealthMonitor).hide();
     yourHealthMonitor.innerHTML = yourHealth;
     yourHealthMonitor.style.color = "red";
-    $(yourHealthMonitor).fadeIn(200);
+    $(yourHealthMonitor).fadeIn(animationCycle);
   }
 
   else{
     $(yourHealthMonitor).hide();
     yourHealthMonitor.innerHTML = 0;
-    $(yourHealthMonitor).fadeIn(200);
+    $(yourHealthMonitor).fadeIn(animationCycle);
   }
 }
 
@@ -110,13 +110,13 @@ function updateMonstersLeftMonitor() {
   if (monstersLeft > 0)  {
     $(monstersLeftMonitor).hide();
     monstersLeftMonitor.innerHTML = monstersLeft;
-    $(monstersLeftMonitor).fadeIn(200);
+    $(monstersLeftMonitor).fadeIn(animationCycle);
     }
     else
     {
       $(monstersLeftMonitor).hide();
       monstersLeftMonitor.innerHTML = "0";
-      $(monstersLeftMonitor).fadeIn(200);
+      $(monstersLeftMonitor).fadeIn(animationCycle);
     }
   }
 
@@ -124,7 +124,7 @@ function updateMonstersLeftMonitor() {
  
     $(yourElixirsMonitor).hide();
     yourElixirsMonitor.innerHTML = elixirs;
-    $(yourElixirsMonitor).fadeIn(200);
+    $(yourElixirsMonitor).fadeIn(animationCycle);
     hideDrinkButtonIfNoNeed();
 } 
 

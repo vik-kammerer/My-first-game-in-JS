@@ -1,22 +1,20 @@
+const animationCycle = 200;
+
 function say(message) {
-  var spd = 200;
+  
   $(storyContent).hide();
   storyContent.innerHTML = message;
-  $(storyContent).fadeIn(spd);
+  $(storyContent).fadeIn(animationCycle);
  }
 
  
  function congratOnWinning() {
-    //setTimeout(function() {
-      $(storyContent).append(winningMessage).fadeIn(200);
-    //}, 210);
+    $(storyContent).append(winningMessage).fadeIn(animationCycle);
  } 
 
 
   function congratOnDeath() {
-   // setTimeout(function() {
-      $(storyContent).append(deathMessage).fadeIn(200);
-    //}, 210);
+   $(storyContent).append(deathMessage).fadeIn(animationCycle);
  } 
 
 
