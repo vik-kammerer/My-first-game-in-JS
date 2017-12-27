@@ -15,14 +15,19 @@ body {
 	display:block;
 }
 
-.drinkButtonHover {
+/*.drinkButtonHover {
 	font-weight: bolder;
 	color: #5F9EA0;
 	cursor: pointer;
-}
+}*/
 
 #drinkButton {
 	display: none;
+	font-weight: bolder;
+	font-size: 24px;
+	width: 15px;
+	cursor: pointer;
+	color: #004600;
 }
 
 .counter {
