@@ -28,13 +28,13 @@ function chooseYes() {
   }
 
   else if (gameCase === "prisonerDetected" && luckDecrement != 0) {
-    say(beingBlessedMessage);
     luckDecrement = 0;
+    say(beingBlessedMessage);
+    setKeepGoing();
+    setRunOrAttackMode();
+    refreshStoryEvents();
     updateLuckDecrementMonitor();
     updateLuckMonitor();
-    setRunOrAttackMode();
-    setKeepGoing();
-    refreshStoryEvents();
   }
 
   else if (gameCase === "prisonerDetected" && luckDecrement === 0) {

@@ -86,6 +86,7 @@ function updateHealthMonitor() {
   else{
     $(yourHealthMonitor).hide();
     yourHealthMonitor.innerHTML = 0;
+    yourHealthMonitor.style.color = "#cc0000";
     $(yourHealthMonitor).fadeIn(animationCycle);
   }
 }
