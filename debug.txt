@@ -1,0 +1,10 @@
+luckDecrement = luckDecrement - 10;
+updateLuckDecrementMonitor();
+
+
+
+
+elixirs++;
+yourHealth = yourHealth - 25;
+updateHealthMonitor();
+updateElixirsMonitor();
