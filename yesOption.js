@@ -27,7 +27,7 @@ function chooseYes() {
     refreshStoryEvents();
   }
 
-  else if (gameCase === "prisonerDetected" && luckDecrement != 0) {
+  else if (gameCase === "prisonerDetected" && luckDecrement != 0 && yourLuck >= 40) {
     luckDecrement = 0;
     say(beingBlessedMessage);
     setKeepGoing();
@@ -37,8 +37,19 @@ function chooseYes() {
     updateLuckMonitor();
   }
 
-  else if (gameCase === "prisonerDetected" && luckDecrement === 0) {
-    say(beingBlessedMessage);
+    else if (gameCase === "prisonerDetected" && yourLuck < 30) {
+    monstersLeft = monstersLeft + 3;
+    say(warlockCallMessage);
+    updateMonstersLeftMonitor();
+    setKeepGoing();
+    setRunOrAttackMode();
+    refreshStoryEvents();
+    updateLuckDecrementMonitor();
+    updateLuckMonitor();
+  }
+
+  else if (gameCase === "prisonerDetected") {
+    say(healerSavedMessage);
     yourHealth = yourHealth + 15;
     updateHealthMonitor();
     setRunOrAttackMode();

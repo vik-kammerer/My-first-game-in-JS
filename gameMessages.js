@@ -12,4 +12,6 @@ const emptyChestMessage         =   "There is nothing inside...";
 const explodedChestMessage      =   "BOOM!!! The chest has exploded...";
 const beingCowardMessage        =   "The danger left behind, but Gods hate cowards!";
 const prisonerDetectedMessage   =   "You see a prisoner, chained to the wall. He desparatly begs to free him. Will you do it?";
-const beingBlessedMessage       =   "The man turns out to be a priest. He blesses you.";
+const beingBlessedMessage       =   "The man turns out to be a priest and he gratefully blesses you. Now all curses have gone.";
+const warlockCallMessage        =   "The man turns out to be a warlock. He calls to dark forces and fades out laughing as a mad. Now more creatures are coming here...";
+const healerSavedMessage        =   "The man turns out to be a healer. He gratefully cures your wounds."
