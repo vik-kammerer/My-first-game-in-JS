@@ -17,7 +17,7 @@ body {
 
 
 #drinkButton {
-	display: none;
+	
 	font-weight: bolder;
 	font-size: 24px;
 	width: 15px;
@@ -59,6 +59,7 @@ table-layout: fixed;
 
 .extraAffect {
 	text-align: center;
+	visibility: hidden;
 }
 
 td {

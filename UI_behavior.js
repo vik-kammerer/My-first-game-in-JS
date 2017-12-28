@@ -58,10 +58,10 @@ function displayTryAgainBtn() {
 
 function hideDrinkButtonIfNoNeed() {
   if (elixirs < 1 || yourHealth >= 100) {
-    $(drinkButton).fadeOut(animationCycle);
+    drinkButton.style.visibility = "hidden";
   }
   else {
-    $(drinkButton).fadeIn(animationCycle);
+    drinkButton.style.visibility = "visible";
   }
 } 
 
@@ -99,10 +99,10 @@ function updateLuckMonitor() {
 function updateLuckDecrementMonitor() {
   if (luckDecrement < 0) {
   luckDecrementMonitor.innerHTML = luckDecrement;
-  luckDecrementMonitor.style.display = "block";
+  luckDecrementMonitor.style.visibility = "visible";
   }
   else {
-    luckDecrementMonitor.style.display = "none";
+    luckDecrementMonitor.style.visibility = "hidden";
   }
 }
 
