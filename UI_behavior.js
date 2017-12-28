@@ -79,7 +79,7 @@ function updateHealthMonitor() {
   else if (yourHealth < 20 && yourHealth > 0) {
     $(yourHealthMonitor).hide();
     yourHealthMonitor.innerHTML = yourHealth;
-    yourHealthMonitor.style.color = "red";
+    yourHealthMonitor.style.color = "#cc0000";
     $(yourHealthMonitor).fadeIn(animationCycle);
   }
 
