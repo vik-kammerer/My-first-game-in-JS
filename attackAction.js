@@ -9,8 +9,15 @@ function attack() {
         updateLuckMonitor();
         checkIfNotDead();
       }
+
+    else if (yourLuck >= 50 && hoblinHealth >= attackSkill) {
+      toHitYourFoe();
+      say(enemyHurtMessage);
+
+    }
           
-    else {
+    else if (yourLuck >= 50 && hoblinHealth <= attackSkill) {
+        hoblinHealth = 30; //re-write for the next battle
         haveKilled();
         updateMonstersLeftMonitor();
         logMonstersLeft();
@@ -19,4 +26,13 @@ function attack() {
       }
         checkIfNotAWinner();
         
+  }
+
+
+  function getDamage(enemyAttack) {
+    yourHealth = yourHealth - enemyAttack;
+  }
+
+  function toHitYourFoe() {
+    hoblinHealth = hoblinHealth - attackSkill;
   }

@@ -6,6 +6,7 @@ let luckDecrement     =   0;
 let elixirs           =   0;
 let gameCase          =   undefined;
 let priorGameCase     =   undefined;
+let attackSkill       =   25;
 
 //--------------------Random luck generator goes here--------------------
 function getRandom() {
@@ -39,7 +40,7 @@ function haveFoundPrisoner() {
 
 function haveBeenHurt() {
 	say(painMessage);
-  yourHealth = yourHealth - 15;
+  getDamage(hoblinAttack);
 	setRunOrAttack();
 }
 
