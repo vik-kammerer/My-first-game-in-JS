@@ -1,5 +1,11 @@
 //noBtn.addEventListener("click", chooseNo);
 
+$(document).ready(
+     () => {
+        say(enemyIsHereMessage);
+    }
+);
+
 $('#attack').click(
     () => {
         attack()
