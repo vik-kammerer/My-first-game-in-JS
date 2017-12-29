@@ -1,6 +1,6 @@
 const painMessage               =   "You have been hurt!";
 const winningMessage            =   " You are the winner!";
-const enemyIsHereMessage        =   "You have met " + hoblinName + ". What will you do?";
+let enemyIsHereMessage        =   "You have met " + currentMonster.name + ". What will you do?";
 const deathMessage              =   " It is over...";
 const noEscapeMessage           =   "You have been chased and now you have to fight!";
 const smashingRunnerMessage     =   "You ran so fast that smashed 3 other monsters!";

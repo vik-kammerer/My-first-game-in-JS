@@ -40,7 +40,7 @@ function haveFoundPrisoner() {
 
 function haveBeenHurt() {
 	say(painMessage);
-  getDamage(hoblinAttack);
+  getDamage(currentMonster.attack);
 	setRunOrAttack();
 }
 

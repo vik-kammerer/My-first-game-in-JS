@@ -25,6 +25,8 @@ updateLuckMonitor();
   }
 
   else {
+    determineCurrentMonster();
+    enemyIsHereMessage        =   "You have met " + currentMonster.name + ". What will you do?";
     say(enemyIsHereMessage);
     setRunOrAttack();
 
