@@ -74,6 +74,7 @@ function updateHealthMonitor() {
     yourHealthMonitor.innerHTML = yourHealth;
     yourHealthMonitor.style.color = "black";
     $(yourHealthMonitor).fadeIn(animationCycle);
+    hideDrinkButtonIfNoNeed();
   }
 
   else if (yourHealth < 20 && yourHealth > 0) {
@@ -81,6 +82,7 @@ function updateHealthMonitor() {
     yourHealthMonitor.innerHTML = yourHealth;
     yourHealthMonitor.style.color = "#cc0000";
     $(yourHealthMonitor).fadeIn(animationCycle);
+    hideDrinkButtonIfNoNeed();
   }
 
   else{
