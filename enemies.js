@@ -1,32 +1,17 @@
-
-// //--------------------Stinky hoblin characteristics--------------------
-// let   hoblinHealth    = 30;
-// let   hoblinAttack    = 10;
-// const hoblinName      = "a stinky hoblin";
-
-
-
-
-
-// //--------------------Fat imp characteristics--------------------
-// let   fatImpHealth    = 55;
-// let   fatImpAttack    = 20;
-// const fatImpName      = "a fat imp";
-
-var currentMonster = {
+let currentMonster = {
   health: 0,
   attack: 0,
   name: " somethingIsWrong"
 };
 
-var stinkyHoblin = {
+const stinkyHoblin = {
   health: 30,
   attack: 10,
   name: "a stinky hoblin"
 };
 
 
-var fatImp = {
+const fatImp = {
   health: 55,
   attack: 20,
   name: "a fat imp" 
@@ -36,9 +21,9 @@ var fatImp = {
   function determineCurrentMonster() {
     yourLuck = tryYourLuck() - luckDecrement;
     if (yourLuck >= 50) {
-      currentMonster = stinkyHoblin;
+      currentMonster = Object.assign({}, stinkyHoblin);
     }
     else {
-     currentMonster = fatImp; 
+      currentMonster = Object.assign({}, fatImp); 
     }
   }
