@@ -18,6 +18,7 @@ const beingBlessedMessage       =   "The man turns out to be a priest and he gra
 const warlockCallMessage        =   "The man turns out to be a warlock. He calls to dark forces and fades out laughing as a mad. Now more creatures are coming here...";
 const healerSavedMessage        =   "The man turns out to be a healer. He gratefully cures your wounds."
 const enemyHurtMessage          =   "You've hurt this bastard! Keep fighting!"
+const dyingPrisonerMessage      =   "He dies on your hands... It is too late..."
 
 
 

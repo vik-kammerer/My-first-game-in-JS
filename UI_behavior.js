@@ -85,6 +85,14 @@ function updateHealthMonitor() {
     hideDrinkButtonIfNoNeed();
   }
 
+  else if (yourHealth > 100) {
+    $(yourHealthMonitor).hide();
+    yourHealth = 100;
+    $(yourHealthMonitor).fadeIn(animationCycle);
+    hideDrinkButtonIfNoNeed();
+    //it is needed so that health never exceeds 100 (game rule)
+  }
+
   else{
     $(yourHealthMonitor).hide();
     yourHealthMonitor.innerHTML = 0;
