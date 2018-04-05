@@ -48,7 +48,7 @@ function chooseYes() {
     updateLuckMonitor();
   }
 
-  else if (gameCase === "prisonerDetected" && yourHealth <= 100) {
+  else if (gameCase === "prisonerDetected" && yourHealth < 100) {
     say(healerSavedMessage);
     yourHealth = yourHealth + 15;
     updateHealthMonitor();
