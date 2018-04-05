@@ -1,138 +1,102 @@
 body {
-
-  cursor:default; 
-	background-color: #F5F5F5;
-	font-family: book antiqua;
-	font-size: 19px;
-	
+     cursor:default;
+     background-color: #F5F5F5;
+     font-family: book antiqua;
+     font-size: 19px;
 }
-
-#systemMessages {
-	align-items: center;
-	justify-content: center;
+ #systemMessages {
+     align-items: center;
+     justify-content: center;
 }
-
 /*hr {
-	align-self: center;
-	width: 273px;
-	height: 30px;
-	border-style: solid;
-	border-width: 1px 0 0 0;
-	border-radius: 20px;
-}*/
-
-
-
-#yesOrNoMode {
-	display:none;
+     align-self: center;
+     width: 273px;
+     height: 30px;
+     border-style: solid;
+     border-width: 1px 0 0 0;
+     border-radius: 20px;
 }
-
-.runOrAttackMode {
-	display:block;
+*/
+ #yesOrNoMode {
+     display:none;
 }
-
-
-#drinkButton {
-	
-	font-weight: bolder;
-	font-size: 24px;
-	width: 15px;
-	cursor: pointer;
-	color: #006400;
+ .runOrAttackMode {
+     display:block;
 }
-
-
-
-#luckDecrementMonitor {
-	color: #cc0000;
-	font-size: 14px;
-	font-weight: bold;
-	vertical-align: middle;
-	width: 30px;
-	height: 30px;
+ #drinkButton {
+     font-weight: bolder;
+     font-size: 24px;
+     width: 15px;
+     cursor: pointer;
+     color: #006400;
 }
-
-#tryAgain {
-	display: none;
+ #luckDecrementMonitor {
+     color: #cc0000;
+     font-size: 14px;
+     font-weight: bold;
+     vertical-align: middle;
+     width: 30px;
+     height: 30px;
 }
-
-
-#yourHealthMonitor {
-	color: black;
+ #tryAgain {
+     display: none;
 }
-
-table {
-border-collapse: collapse;
-border-spacing: 0;
-font-size: 19px;
-table-layout: fixed;
+ #yourHealthMonitor {
+     color: black;
 }
-
-.table_label {
-	width: 119px;
-	height: 30px;
+ table {
+     border-collapse: collapse;
+     border-spacing: 0;
+     font-size: 19px;
+     table-layout: fixed;
 }
-
-.extraAffect {
-	text-align: center;
-	visibility: hidden;
+ .table_label {
+     width: 119px;
+     height: 30px;
 }
-
-td {
-	padding: 0;
+ .extraAffect {
+     text-align: center;
+     visibility: hidden;
 }
-
-.monitor {
-	text-align: right;
-	width: 30px;
-	height: 30px;
-
+ td {
+     padding: 0;
 }
-
-input {
-	font-size: 19px;
-	cursor: pointer;
-	font-family: book antiqua;
-	
-	
+ .monitor {
+     text-align: right;
+     width: 30px;
+     height: 30px;
 }
-
-input[disabled] {
-	cursor: not-allowed;
-	font-family: book antiqua;
+ input {
+     font-size: 19px;
+     cursor: pointer;
+     font-family: book antiqua;
 }
-
-.toCenter {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+ input[disabled] {
+     cursor: not-allowed;
+     font-family: book antiqua;
 }
-
-
-#storyLine	{
-	
-	padding: 20px;
-	width: 600px;
-	height: 35px;
-	text-align: center;
-	border-style: solid;
-	border-width: 1px;
-	border-radius: 10px;
-	margin: 5px;
-	box-shadow: 0 8px 6px -6px black;
+ .toCenter {
+     display: flex;
+     align-items: center;
+     justify-content: center;
 }
-
-#storyContent {
-	vertical-align: middle;
-
-
-
+ #storyLine {
+     padding: 20px;
+     width: 600px;
+     height: 35px;
+     text-align: center;
+     border-style: solid;
+     border-width: 1px;
+     border-radius: 10px;
+     margin: 5px;
+     box-shadow: 0 8px 6px -6px black;
 }
-
-#controls {
-	
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 15px;
+ #storyContent {
+     vertical-align: middle;
+}
+ #controls {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 15px;
 }

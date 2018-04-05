@@ -1,93 +1,75 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8"/>
-		<title>
-			Dummy Battle
-		</title>
-		
-		
-		<link href="visualisation.css" rel="stylesheet" type="text/css" />
-				
-	</head>
-
-	<body>
-	
-	<div class="toCenter">
-	<div id="storyLine">
-	<span id="storyContent">	
-	Initial message
-	</span>
-	</div>
-	</div>
-	
-	<div id="controls">
-
-		<span id="yesOrNoMode">
-			<input type="submit" value="Yes!" id="yes">
-			<input type="submit" value="No..." id="no">
-		</span>
-
-		<span id="runOrAttackMode">
-			<input type="submit" value="Attack!" id="attack" disabled>
-			<input type="submit" value="Run!" id="run" disabled>
-			<input type="submit" value="Keep going" id="keepGoing">
-		</span>
-	
-
-	</div>
-	
-	<div class="toCenter">
-	<table>
-		<tr>
-			<td class="table_label">Monsters left:</td>
-			<td class="monitor" id="monstersLeft">15</td>
-		</tr>
-		<tr>
-			<td class="table_label">Your health:</td>
-			<td class="monitor" id="yourHealthMonitor">100</td>
-			<td class="extraAffect" id="drinkButton" title="Drink the elixir!">+</td>
-		</tr>
-		<tr>
-			<td class="table_label">Fortune:</td>
-			<td class="monitor" id="yourLuckMonitor">100</td>
-			<td class="extraAffect" id="luckDecrementMonitor" title="You have been cursed for being coward."></td>
-		</tr>
-		<tr>
-			<td class="table_label">Elixirs:</td>
-			<td class="monitor" id="yourElixirsMonitor">0</td>
-			
-		</tr>
-	
-	</table>	
-
-	</div> 
-
-	<!--<div id="systemMessages">
-		<div class="hr"><hr /></div> -->
-	
-
-	</div>
-
-
-
-	<div class="toCenter">
-		<input type="submit" value="Try again!" id="tryAgain">
-	</div>
-	<script type="text/javascript" src="enemies.js"></script>
-	<script type="text/javascript" src="UI_behavior.js"></script>
-	<script type="text/javascript" src="jquery-3.2.1.js"></script>
-	<script type="text/javascript" src="gameMechanic.js"></script>
-	<script type="text/javascript" src="gameMessages.js"></script>
-	<script type="text/javascript" src="attackAction.js"></script>
-	<script type="text/javascript" src="runAction.js"></script>
-	<script type="text/javascript" src="keepGoingAction.js"></script>
-	<script type="text/javascript" src="logging.js"></script>
-	<script type="text/javascript" src="yesOption.js"></script>
-	<script type="text/javascript" src="nopeOption.js"></script>
-	<script type="text/javascript" src="eventListeners.js"></script>
-	<script type="text/javascript" src="storyBuilder.js"></script>
-	<script type="text/javascript" src="animation.js"></script>
-	
-	</body>
+   <head>
+      <meta charset="utf-8"/>
+      <title>
+         Dummy Battle
+      </title>
+      <link href="visualisation.css" rel="stylesheet" type="text/css" />
+   </head>
+   <body>
+      <div class="toCenter">
+         <div id="storyLine">
+            <span id="storyContent">	
+            Click "Keep going" to start!
+            </span>
+         </div>
+      </div>
+      <div id="controls">
+         <span id="yesOrNoMode">
+         <input type="submit" value="Yes!" id="yes">
+         <input type="submit" value="No..." id="no">
+         </span>
+         <span id="runOrAttackMode">
+         <input type="submit" value="Attack!" id="attack" disabled>
+         <input type="submit" value="Run!" id="run" disabled>
+         <input type="submit" value="Keep going" id="keepGoing">
+         </span>
+      </div>
+      <div class="toCenter">
+         <table>
+            <tr>
+               <td class="table_label">Monsters left:</td>
+               <td class="monitor" id="monstersLeft">15</td>
+            </tr>
+            <tr>
+               <td class="table_label">Your health:</td>
+               <td class="monitor" id="yourHealthMonitor">100</td>
+               <td class="extraAffect" id="drinkButton" title="Drink the elixir!">+</td>
+            </tr>
+            <tr>
+               <td class="table_label">Fortune:</td>
+               <td class="monitor" id="yourLuckMonitor">100</td>
+               <td class="extraAffect" id="luckDecrementMonitor" title="You have been cursed for being coward."></td>
+            </tr>
+            <tr>
+               <td class="table_label">Elixirs:</td>
+               <td class="monitor" id="yourElixirsMonitor">0</td>
+            </tr>
+         </table>
+      </div>
+      <!--<div id="systemMessages">
+         <div class="hr"><hr /></div> -->
+      </div>
+      <div class="toCenter">
+         <input type="submit" value="Try again!" id="tryAgain">
+      </div>
+      <script type="text/javascript" src="enemies.js"></script>
+      <script type="text/javascript" src="UI_behavior.js"></script>
+      <script type="text/javascript" src="jquery-3.2.1.js"></script>
+      <script type="text/javascript" src="gameMechanic.js"></script>
+      <script type="text/javascript" src="gameMessages.js"></script>
+      <script type="text/javascript" src="attackAction.js"></script>
+      <script type="text/javascript" src="runAction.js"></script>
+      <script type="text/javascript" src="keepGoingAction.js"></script>
+      <script type="text/javascript" src="logging.js"></script>
+      <script type="text/javascript" src="yesOption.js"></script>
+      <script type="text/javascript" src="nopeOption.js"></script>
+      <script type="text/javascript" src="eventListeners.js"></script>
+      <script type="text/javascript" src="storyBuilder.js"></script>
+      <script type="text/javascript" src="animation.js"></script>
+   </body>
 </html>
+
