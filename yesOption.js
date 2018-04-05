@@ -37,7 +37,7 @@ function chooseYes() {
     updateLuckMonitor();
   }
 
-    else if (gameCase === "prisonerDetected" && yourLuck < 30) {
+  else if (gameCase === "prisonerDetected" && yourLuck < 30) {
     monstersLeft = monstersLeft + 3;
     say(warlockCallMessage);
     updateMonstersLeftMonitor();
