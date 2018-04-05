@@ -13,6 +13,7 @@ function attack() {
     else if (yourLuck >= 50 && currentMonster.health >= attackSkill) {
       toHitYourFoe();
       say(enemyHurtMessage);
+      updateLuckMonitor();
 
     }
           
