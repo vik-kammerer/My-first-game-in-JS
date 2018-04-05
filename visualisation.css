@@ -7,6 +7,22 @@ body {
 	
 }
 
+#systemMessages {
+	align-items: center;
+	justify-content: center;
+}
+
+/*hr {
+	align-self: center;
+	width: 273px;
+	height: 30px;
+	border-style: solid;
+	border-width: 1px 0 0 0;
+	border-radius: 20px;
+}*/
+
+
+
 #yesOrNoMode {
 	display:none;
 }
