@@ -60,7 +60,8 @@ function chooseYes() {
   else if (gameCase === "prisonerDetected" && yourHealth === 100) {
     say(dyingPrisonerMessage);
     setKeepGoing();
-    refreshStoryEvents()
+    setRunOrAttackMode();
+    refreshStoryEvents();
   }
 
   else {
