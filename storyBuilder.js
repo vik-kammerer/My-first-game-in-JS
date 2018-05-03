@@ -15,7 +15,7 @@ function checkPriorGameCase(thisGameCase) {
 
 function moveStory() {
 yourLuck = tryYourLuck() - luckDecrement;
-updateLuckMonitor();
+
   if (yourLuck >= 60 && checkPriorGameCase("chestDetected") === false) {
     haveFoundChest();
   }
