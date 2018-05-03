@@ -17,13 +17,25 @@ const fatImp = {
   name: "a fat imp" 
 };
 
+const drunkenTroll = {
+  health: 85,
+  attack: 30,
+  name: "a drunken troll"
+};
+
 
   function determineCurrentMonster() {
     yourLuck = tryYourLuck() - luckDecrement;
-    if (yourLuck >= 50) {
-      currentMonster = Object.assign({}, stinkyHoblin);
+
+    if (yourLuck <= 30) {
+      currentMonster = Object.assign({}, drunkenTroll); 
     }
-    else {
+
+    else if (yourLuck <= 50) {
       currentMonster = Object.assign({}, fatImp); 
+    }
+
+    else {
+      currentMonster = Object.assign({}, stinkyHoblin);
     }
   }
